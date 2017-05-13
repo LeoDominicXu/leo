@@ -8,8 +8,7 @@
 
     <!-- 应用名称(唯一的) -->
     <dubbo:application name="leo" owner="dominic"/>
-    <dubbo:registry id="paiServiceRegistry"
-                    address="zookeeper://registry1.dubbo.host:2181;zookeeper://registry2.dubbo.host:2181;zookeeper://registry3.dubbo.host:2181"/>
+    <dubbo:registry id="paiServiceRegistry" address="zookeeper://registry1.dubbo.host:2181;zookeeper://registry2.dubbo.host:2181;zookeeper://registry3.dubbo.host:2181"/>
     <dubbo:protocol id="paiServiceProtocol" server="netty" name="dubbo" port="30032" dispatcher="all" threadpool="cached" threads="500"/>
     <!-- dubbo监控 -->
     <dubbo:monitor protocol="registry"/>
