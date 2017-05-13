@@ -12,8 +12,8 @@
     <dubbo:protocol id="paiServiceProtocol" server="netty" name="dubbo" port="30032" dispatcher="all" threadpool="cached" threads="500"/>
     <!-- dubbo监控 -->
     <dubbo:monitor protocol="registry"/>
-    
 
+    
     <!-- ============================== 配置服务 ========================================== -->
     <!-- 配置服务MathComputerService -->
     <bean id="MathComputerService" class="com.xuzc.dubbo.service.impl.MathComputerImpl" />
